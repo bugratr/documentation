@@ -1,15 +1,13 @@
-# Agoric Documentation Guide
+# Agoric Dokümantasyon Kılavuzu
 
 ::: tip Beta status
-The Agoric platform is at the beta stage. It is in the process of being formally evaluated for vulnerabilities, and is undergoing security treatment and hardening to support mainnet-1 launch. Do not use for production purposes. 
+Agoric platformu beta aşamasındadır. Güvenlik açıkları için resmi olarak değerlendirilme sürecinde ve ana layer-1 lansmanını desteklemek için güvenlik tedavisi ve sertleştirme sürecinden geçiyor. Lütfen üretim amaçlı kullanmayınız.
 :::
 
-Agoric provides three main types of documentation, as well as links to
-"big picture" presentations and papers and links to our source code on GitHub. This page
-describes our documentation structure, where documents are, and when you should use them, 
-as well as what order to read them.
+Agoric, üç ana belge türü ve ayrıca aşağıdakilere bağlantılar sağlar:
+"büyük resim" sunumları, makaleler ve GitHub'daki kaynak kodumuza bağlantılar. Bu sayfa, belgelerin nerede olduğunu ve bunları ne zaman kullanmanız gerektiğini ve ayrıca bunları hangi sırayla okumanız gerektiğini belgeleme yapımızı açıklar.
 
-Our three main documentation types are:
+Üç ana belge tipimiz şunlardır:
 - **Getting Started**: These are the first things you should
 read. They cover what to do to install, set up, and start
 using Agoric's smart contract tools. They also introduce those tools and
