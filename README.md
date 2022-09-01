@@ -1,22 +1,14 @@
-# Documentation
+# Dokümantasyon
 
-This repository contains the raw documentation files for the [Agoric
-documentation website](https://agoric.com/documentation/).
+Bu depo, [Agoric dokümantasyon web sitesi] için ham dokümantasyon dosyalarını içerir.(https://agoric.com/documentation/).
 
-* [Learn how to mint new tokens of various kinds in our ERTP (Electronic
-Rights Transfer
-Protocol)](https://agoric.com/documentation/ertp/guide/)
+* [ERTP'mizde (Elektronik Haklar Devir Protokolü) çeşitli türlerde yeni jetonların nasıl basılacağını öğrenin)](https://agoric.com/documentation/ertp/guide/)
 
 
-* Want to write smart contracts where the worst thing that can happen to
-your users is they get their money back? [Check out how we enforce
-"offer safety" in smart contracts on
-Zoe](https://agoric.com/documentation/zoe/guide/)
+* Kullanıcılarınızın başına gelebilecek en kötü şeyin paralarını geri almak olduğu akıllı sözleşmeler yazmak ister misiniz? [Zoe'de akıllı sözleşmelerde "güvenlik teklifini" nasıl uyguladığımıza göz atın](https://agoric.com/documentation/zoe/guide/)
 
 
-* Wondering about IBC? [Agoric has been hard at work with Tendermint Inc
-and the Interchain Foundation](https://cosmos.network/ibc)
+* IBC'yi mi merak ediyorsunuz? [Agoric, Tendermint Inc ve Interchain Foundation ile sıkı bir şekilde çalışıyor.](https://cosmos.network/ibc)
 
 
-* Want to run the full Agoric vm? You can [get started
-here](https://agoric.com/documentation/getting-started/#overview)
+* Tam Agoric vm'yi çalıştırmak ister misiniz? [buradan başlayabilirsiniz](https://agoric.com/documentation/getting-started/#overview)
