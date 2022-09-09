@@ -1,12 +1,11 @@
+# Agoric SDK'nın Kurulması
 
-# Installing the Agoric SDK
+Agoric Zoe çerçevesini kullanarak JavaScript akıllı sözleşmeleri yazmak için,
+önce Agoric Software Development Kit'i (SDK) kurun.
 
-To write JavaScript smart contracts using the Agoric Zoe framework,
-first install the Agoric Software Development Kit (SDK).
+## Hızlı başlangıç
 
-## Quick Start
-
-If you're familar with JavaScript development tools such as `node`, `yarn`, and `git`:
+"node", "yarn" ve "git" gibi JavaScript geliştirme araçlarına aşinaysanız:
 
 ```shell
 node --version # 14.15.0 or higher
@@ -19,78 +18,77 @@ yarn link-cli ~/bin/agoric
 agoric --version
 ```
 
-Then proceed to [starting a project](/getting-started/start-a-project.md).
+Ardından [bir proje başlatmaya](/getting-started/start-a-project.md) geçin.
 
-A more detailed explanation follows.
+Daha ayrıntılı bir açıklama aşağıdadır.
 
-::: tip Watch: Prepare Your Agoric Environment (November 2020)
-This presentation is a good overview of the Agoric SDK setup process,
-though a few details are out of date:
-
+::: ipucu İzle: Agorik Ortamınızı Hazırlayın (Kasım 2020)
+Bu sunum, Agoric SDK kurulum sürecine iyi bir genel bakış niteliğindedir, ancak birkaç ayrıntı güncelliğini yitirmiştir:
  - node version: 12.x is too old; use 14.15.0 or higher
  - skip `git checkout hackathon-2020-11`; use the default `master` branch
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w0By22jYhJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 :::
 
-## Platform: Linux shell or equivalent
+## Platform: Linux kabuğu veya eşdeğeri
 
-The Agoric SDK is supported on
+Agoric SDK üzerinde desteklenir
 <a href="https://en.wikipedia.org/wiki/Linux">Linux</a>,
-<a href="https://www.apple.com/macos/">MacOS</a>, or
-<a href="https://docs.microsoft.com/en-us/windows/wsl/">Windows Subsystem for Linux (WSL).</a>
+<a href="https://www.apple.com/macos/">MacOS</a> veya
+<a href="https://docs.microsoft.com/en-us/windows/wsl/">Linux için Windows Alt Sistemi (WSL).</a>
 
- - To open a terminal on Macs, see **Applications>Utilities>terminal** in the **Finder**.
- - To launch a bash shell at a specific folder on Windows 10:
-   1. Navigate to that folder in File Explorer.
-   2. Click the address bar while in that folder.
-   3. Type <code>bash</code> in the address bar and press <b>Enter</b>
-
-
-## Install Node.js 14.15.0 or higher
-
-Download from [nodejs.org](https://nodejs.org/) and follow the instructions for your platform.
+ - Mac'lerde bir terminal açmak için **Finder**'da **Uygulamalar>Yardımcı Programlar>terminal** bölümüne bakın.
+ - Windows 10'da belirli bir klasörde bir bash kabuğu başlatmak için:
+   1. Dosya Gezgini'nde o klasöre gidin.
+   2. Bu klasördeyken adres çubuğuna tıklayın.
+   3. Adres çubuğuna <code>bash</code> yazın ve <b>Enter</b>'a basın
 
 
-## Install Yarn package manager
+## Node.js 14.15.0 veya sonraki sürümünü yükleyin
 
-Follow [Yarn Installation](https://classic.yarnpkg.com/en/docs/install)
-instructions; for example:
+[nodejs.org](https://nodejs.org/) adresinden indirin ve platformunuz için talimatları izleyin.
+
+
+## Yarn paket yöneticisini kurun
+
+[Yarn Kurulumu](https://classic.yarnpkg.com/en/docs/install) izleyin
+Talimatlar; örneğin:
 
 ```shell
 npm install --global yarn
 ```
 
-## Clone the Agoric SDK
+## Agoric SDK'yı klonlayın
 
 ```shell
 git clone https://github.com/Agoric/agoric-sdk
 cd agoric-sdk
 ```
 
-To update an existing clone:
+Mevcut bir klonu güncellemek için:
 
 ```shell
 git pull
 ```
 
-## Install NPM dependencies
+## NPM bağımlılıklarını yükleyin
 
 ```shell
 yarn install
 ```
 
-**Note:** If you run into errors during install or build, make sure you have build-essential installed. `gcc --version`.
+**Not:** Yükleme veya derleme sırasında hatalarla karşılaşırsanız, build-essential'ın kurulu olduğundan emin olun. "gcc --versiyon".
 
-## Build packages
+## Paketler oluşturun
 
 ```shell
 yarn build
 ```
 
 ## Install `agoric` CLI
+## 'agoric' CLI'yi kurun
 
-Install the `agoric` command-line interface in a convenient place in your `$PATH` such as:
+'agoric' komut satırı arabirimini '$PATH' dosyanızda aşağıdaki gibi uygun bir yere kurun:
 
 ```shell
 yarn link-cli ~/bin/agoric
