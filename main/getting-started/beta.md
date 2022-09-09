@@ -1,66 +1,61 @@
-# Agoric Beta
-Release Version: Baltic
+# Agorik Beta
+Yayın Sürümü: Baltık
 
 ![Agoric Banner](./assets/agoric-banner-2.png)
 
-Welcome to Phase 1 of the Agoric Beta!
+Agorik Beta'nın 1. Aşamasına hoş geldiniz!
 
-This documentation site goes into detail about the Agoric system. For Beta, we recommend everyone start by interacting
-with the deployed application as a user. You'll start by getting your wallet set up, including getting some mock assets to play with
+Bu dokümantasyon sitesi Agorik sistem hakkında ayrıntılı bilgi vermektedir. Beta için herkesin etkileşime girerek başlamasını öneririz.
+bir kullanıcı olarak dağıtılan uygulama ile. Oynamak için bazı sahte varlıklar da dahil olmak üzere cüzdanınızı kurarak başlayacaksınız.
 
-## Set Up A Wallet (Agoric Solo Machine) ##
+## Bir Cüzdan Kurma (Agorik Solo Makinesi) ##
 
-Unlike other blockchains, your Agoric "wallet" is actually a solo machine (process) that maintains some additional state 
-about your account. For now, this requires that you run some processes locally. For instructions on setting up your wallet:
+Diğer blok zincirlerinden farklı olarak, Agoric "cüzdanınız" aslında bazı ek durumları koruyan solo bir makinedir (işlem).
+hesabınız hakkında. Şimdilik bunun için bazı işlemleri yerel olarak çalıştırmanız gerekiyor. Cüzdanınızı kurmayla ilgili talimatlar için:
 
 [Agoric Wallet Set-up Guide (Docker)](https://github.com/Agoric/agoric-sdk/wiki/Setting-up-an-Agoric-Dapp-Client-with-docker-compose)
 
 [Agoric Wallet Set-up Video Walkthrough](https://www.youtube.com/watch?v=e5LQx0EqR0o)
 
-Don't worry, this'll get much easier soon. After it passes reviews, the wallet will 
-be available via a downloadable application. On mainnet launch, Agoric will be integrated 
-with leading wallet providers via a simple plugin.
+Endişelenme, bu yakında çok daha kolay olacak. İncelemeleri geçtikten sonra, cüzdan indirilebilir bir uygulama aracılığıyla kullanıma sunulacak. Ana ağ lansmanında Agoric, basit bir eklenti aracılığıyla önde gelen cüzdan sağlayıcılarıyla entegre edilecek.
 
-## Head to the Vault App ##
+## Vault Uygulamasına gidin ##
 
-Play around with the mock assets we've kindly pre-stocked your wallet with.
+Cüzdanınızı önceden stokladığımız sahte varlıklarla işlem yapın.
 
-[Vault Application](https://treasury.agoric.app)
+[Vault Uygulaması](https://treasury.agoric.app)
 
-## Start Building Things ##
+## Bir Şeyler İnşa Etmeye Başlayın ##
 
-[Start Coding](/getting-started/) with a description of how to use our documentation to get started.
+[Kodlamaya Başlayın](/getting-started/), başlamak için belgelerimizin nasıl kullanılacağına ilişkin bir açıklama ile.
 
-[Join Our Discord Community](https://agoric.com/discord) and chat with us and other developers.
+[Discord Topluluğumuza Katılın](https://agoric.com/discord) ve bizimle ve diğer geliştiricilerle sohbet edin.
 
-## What You Can Build in Beta
+## Beta'da Neler İnşa Edebilirsiniz?
 
 <div class="two-col-table">
 
-| Fungible and non-fungible tokens | Atomic swap |
+| Değiştirilebilir ve değiştirilemez belirteçler | Atom takası |
 | ------ | ----------- |
-| <div style="text-align: center">![Non Fungible Token](./assets/nft-small.png) </div> <br>Create and use either fungible or non-fungible digital assets with your contracts. | <div style="text-align: center">![Atomic Swap](./assets/atomicswap.png) </div> <br>Enable the exchange of one cryptocurrency for another without using centralized intermediaries. |
+| <div style="text-align: center">![Non Fungible Token](./assets/nft-small.png) </div> <br>Sözleşmelerinizle takas edilebilir veya takas edilemez dijital varlıklar oluşturun ve kullanın . | <div style="text-align: center">![Atomic Swap](./assets/atomicswap.png) </div> <br>Merkezi aracılar kullanmadan bir kripto para biriminin başka bir kripto para birimiyle değişimini etkinleştirin. |
 
-| Covered call | Simple exchange |
+| Gizli çağrı | Basit değişim |
 | ------ | ----------- |
-| <div style="text-align: center">![Covered Call](./assets/covered-call-small.png) </div> <br>Create an option contract that enables the holder to buy a specific, previously escrowed, asset at a predetermined strike price (before expiration). | <div style="text-align: center">![Simple Exchange](./assets/simple-exchange-small.png) </div> <br>A basic exchange with an order book for one asset, priced in a second asset. |
+| <div style="text-align: center">![Covered Call](./assets/covered-call-small.png) </div> <br>Sahibinin belirli bir satın alma işlemi gerçekleştirmesini sağlayan bir opsiyon sözleşmesi oluşturun, önceden emanet edilmiş, önceden belirlenmiş bir kullanım fiyatında (son kullanma tarihinden önce) varlık. | <div style="text-align: center">![Basit Değişim](./assets/simple-exchange-small.png) </div> <br>Fiyatlandırılmış bir varlık için sipariş defteri içeren temel bir değişim ikinci bir varlık. |
 
-| Automated market maker |
+| Otomatik piyasa yapıcı |
 | ------ |
-| <div style="text-align: center">![Automated Market Maker](./assets/amm-small.png) </div> <br>Build a smart contract that acts as an on-chain automated DEX with liquidity. |
+| <div style="text-align: center">![Otomatik Piyasa Yapıcı](./assets/amm-small.png) </div> <br>Zincir üzerinde otomatik DEX işlevi gören bir akıllı sözleşme oluşturun: likidite. |
 
 </div>
 
-## Smart Contract Code Sample: Call Option
+## Akıllı Sözleşme Kodu Örneği: Çağrı Seçeneği
 
-As an example, a *covered call option* is the right (with no obligation) to buy digital 
-assets at a predetermined price, called the *strike price*. This call option is *covered*, 
-meaning that the owner escrowed the digital assets for the call option. *Escrow* guarantees
-the assets can be transferred between parties without relying on an asset's owner to keep 
-their promise. The call option has an *expiration date*, when the opportunity is cancelled. 
-The digital assets owner cannot remove the assets from escrow before the expiration date.
+Örnek olarak, *kapsamlı arama seçeneği*, dijital varlıkları *kullanım fiyatı* olarak adlandırılan önceden belirlenmiş bir fiyattan satın alma hakkıdır (zorunluluk yoktur). Bu arama seçeneği *kapsanır*, yani sahibinin arama seçeneği için dijital varlıkları emanet ettiği anlamına gelir. *Emanet*, bir varlığın sahibinin sözünü tutmasına güvenmeden varlıkların taraflar arasında devredilebileceğini garanti eder. Fırsat iptal edildiğinde, arama seçeneğinin bir *son kullanma tarihi* vardır.
+Dijital varlık sahibi, varlıkları son kullanma tarihinden önce emanetten çıkaramaz.
 
-A covered call proposal looks like:
+Kapsamlı bir çağrı teklifi şuna benzer:
+
 ```js
 const proposal = {
     give: { StrikePrice: moola(25) },
@@ -69,23 +64,21 @@ const proposal = {
 };
 ```
 
-The *deadline* is the option's expiration date. The above code specifies that if the option 
-has not been exercised by the deadline, its underlying assets are paid to the contract's creator 
-as a refund of their escrowed assets.
+*Son tarih* opsiyonun sona erme tarihidir. Yukarıdaki kod, opsiyonun son tarihe kadar kullanılmaması durumunda, dayanak varlıklarının sözleşmenin yaratıcısına emanet edilen varlıklarının iadesi olarak ödeneceğini belirtir.
 
-## Developer Experience
-Agoric is a team of engineers. We've based our developer experience on our decades of open-source software experience. In our beta, you can expect the following:
+## Geliştirici Deneyimi
+Agoric bir mühendis ekibidir. Geliştirici deneyimimizi onlarca yıllık açık kaynaklı yazılım deneyimimize dayandırdık. Betamızda aşağıdakileri bekleyebilirsiniz:
 
-* VS Code with debugging support
-* Ability to build and test locally
-* Types included to accelerate your local development
-* Rapid testing iteration with the Ava test infrastructure
+* Hata ayıklama destekli VS Kodu
+* Yerel olarak oluşturma ve test etme yeteneği
+* Yerel gelişiminizi hızlandırmak için dahil edilen türler
+* Ava test altyapısı ile hızlı test iterasyonu
 
-### Ready to get started?
-[Start Coding](/getting-started/)
+### Başlamaya hazır mısın?
+[Kodlamayı Başlat](/getting-started/)
 
-### Stuck on something?
-Chat with our engineers on [Agoric Discord](https://agoric.com/discord).
+### Bir şeye mi takıldınız?
+Mühendislerimizle [Agoric Discord](https://agoric.com/discord) üzerinden sohbet edin.
 
-### Connect with us on socials?
-Follow us on [Twitter](https://twitter.com/agoric), [Telegram](https://t.me/agoricsystems) and [LinkedIn](https://www.linkedin.com/company/agoric/).
+### Bizimle sosyal ağlarda bağlantı kurmak ister misiniz?
+Bizi [Twitter](https://twitter.com/agoric), [Telegram](https://t.me/agoricsystems) ve [LinkedIn](https://www.linkedin.com/company/agoric) üzerinden takip edin /).
