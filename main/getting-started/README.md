@@ -1,93 +1,67 @@
-# Agoric Documentation Guide
+# Agorik Dokümantasyon Kılavuzu
 
-::: tip Beta status
-The Agoric platform is at the beta stage. It is in the process of being formally evaluated for vulnerabilities, and is undergoing security treatment and hardening to support mainnet-1 launch. Do not use for production purposes. 
+::: ipucu Beta durumu
+Agoric platformu beta aşamasındadır. Güvenlik açıkları için resmi olarak değerlendirilme sürecinde ve ana ağ-1 lansmanını desteklemek için güvenlik tedavisi ve sertleştirme sürecinden geçiyor. Üretim amaçlı kullanmayınız.
 :::
 
-Agoric provides three main types of documentation, as well as links to
-"big picture" presentations and papers and links to our source code on GitHub. This page
-describes our documentation structure, where documents are, and when you should use them, 
-as well as what order to read them.
+Agoric, üç ana belge türü ve ayrıca aşağıdakilere bağlantılar sağlar:
+"büyük resim" sunumları, makaleler ve GitHub'daki kaynak kodumuza bağlantılar. Bu sayfa, belgelerin nerede olduğunu ve bunları ne zaman kullanmanız gerektiğini ve ayrıca bunları hangi sırayla okumanız gerektiğini belgeleme yapımızı açıklar.
 
-Our three main documentation types are:
-- **Getting Started**: These are the first things you should
-read. They cover what to do to install, set up, and start
-using Agoric's smart contract tools. They also introduce those tools and
-their underlying concepts and designs.
-- **Guides**: These are more detailed and complete descriptions
-of our tools and their concepts, designs, and usage. They include
-descriptions and examples of how to do various tasks with Agoric
-software.
-- **Reference**: These are the specs for our APIs and commands,
-  as well as checklist tables that specify and explain the
-  steps for extended procedures, such as installing Agoric
-  software.
+Üç ana belge tipimiz şunlardır:
+- **Başlarken**: Bunlar, okumanız gereken ilk şeylerdir. Agoric'in akıllı sözleşme araçlarını kurmak, kurmak ve kullanmaya başlamak için ne yapılması gerektiğini kapsarlar. Ayrıca bu araçları ve bunların temel kavramlarını ve tasarımlarını tanıtırlar.
+- **Kılavuzlar**: Bunlar daha ayrıntılı ve eksiksiz açıklamalardır
+araçlarımız ve konseptleri, tasarımları ve kullanımları. Onlar içerir
+Agoric ile çeşitli görevlerin nasıl yapılacağına dair açıklamalar ve örnekler
+yazılım.
+- **Referans**: Bunlar, API'lerimizin ve komutlarımızın özellikleridir,
+  belirten ve açıklayan kontrol listesi tablolarının yanı sıra
+  Agoric kurulumu gibi genişletilmiş prosedürler için adımlar
+  yazılım.
 
-Some documents fall into multiple categories. For example, our Agoric
-installation document is both a Reference and a Getting Started document.
+Bazı belgeler birden fazla kategoriye ayrılır. Örneğin, Agoric kurulum belgemiz hem Referans hem de Başlangıç ​​belgesidir.
 
-You should read them in this order:
-1. **[Before Using the Agoric SDK](./before-using-agoric.md)**: 
-How to install software that the Agoric SDK depends on.
-2. **[Start a Project](./start-a-project.md)**: A
-  procedure checklist that walks you through creating a new Agoric SDK 
-  project from scratch. 
-3. **[ERTP Introduction](./ertp-introduction.md)**:
-  A Getting Started document that briefly explains the concepts and components of Agoric's Electronic
-  Rights Transfer Protocol (ERTP) which is the heart of Agoric
-  software.
-4. **[Zoe Introduction](./intro-zoe.md)**: 
-  A Getting Started document that briefly explains the concepts and components of Zoe, our reusable smart contract 
-  for writing other smart contracts in JavaScript. Zoe implements our guarantee that users
-  either get what they wanted from the contract or a full refund of what they put up for it. 
-5. **[Agoric Platform/Stack](/platform/README.md)**: A brief introduction to the complete Agoric platform/technical stack.
-6. **[Agoric Dapp Guide](/dapps/README.md)**: 
-   A Dapp is a decentralized application, typically with a browser-based user interface, a public
-   API server, and a contract running on the Agoric blockchain. This document explains a Dapp's
-   basic directory and file structure.
-7. **[Deploying Smart Contracts](./deploying.md)**: 
-  A brief description of the tools and processes for deploying contracts to the chain and
-  application code to the application server.
-8. **[JavaScript Distributed Programming Guide](/guides/js-programming/)**: 
-  We've made some Agoric-specific additions at various layers, including concepts, syntax, 
-  and additions to the Agoric library. You should know about and understand these before 
-  programming on the Agoric platform.
-8. **[ERTP Guide](/ertp/guide/README.md)**: 
-  A detailed description of ERTP concepts, design, components, and commands. 
-  Includes examples of command usage. You should also look at the ERTP API 
-  documentation, accessible from the ERTP documentation sidebar menu.
-9. **[Zoe Guide](/zoe/guide/README.md)**: 
-  A detailed description of Zoe concepts, design, components, and commands. 
-  Includes examples of command usage. You should also look at the Zoe API 
-  documentation, accessible from the Zoe documentation sidebar menu.
+Bunları şu sırayla okumalısınız:
+1. **[Agoric SDK'yı Kullanmadan Önce](./before-using-agoric.md)**:
+Agoric SDK'nın bağlı olduğu yazılım nasıl kurulur.
+2. **[Bir Proje Başlatın](./start-a-project.md)**: A
+  sıfırdan yeni bir Agoric SDK projesi oluştururken size yol gösteren prosedür kontrol listesi.
+3. **[ERTP Tanıtımı](./ertp-introduction.md)**:
+ Agoric yazılımının kalbi olan Agoric'in Elektronik Hak Transfer Protokolü'nün (ERTP) kavramlarını ve bileşenlerini kısaca açıklayan bir Başlarken belgesi.
+4. **[Zoe Girişi](./intro-zoe.md)**:
+JavaScript'te başka akıllı sözleşmeler yazmak için yeniden kullanılabilir akıllı sözleşmemiz olan Zoe'nin kavramlarını ve bileşenlerini kısaca açıklayan bir Başlarken belgesi. Zoe, kullanıcıların ya sözleşmeden istediklerini almaları ya da bunun için koyduklarının tam bir geri ödemesini garanti etmemizi sağlar.
+5. **[Agorik Platform/Yığın](/platform/README.md)**: Tam Agorik platform/teknik yığına kısa bir giriş.
+6. **[Agorik Dapp Kılavuzu](/dapps/README.md)**:
+ Dapp, tipik olarak tarayıcı tabanlı bir kullanıcı arayüzü, genel bir API sunucusu ve Agoric blok zincirinde çalışan bir sözleşme ile merkezi olmayan bir uygulamadır. Bu belge, bir Dapp'in temel dizini ve dosya yapısını açıklar.
+7. **[Akıllı Sözleşmeleri Dağıtma](./deploying.md)**:
+Sözleşmeleri zincire ve uygulama kodunu uygulama sunucusuna dağıtmaya yönelik araçların ve süreçlerin kısa bir açıklaması.
+8. **[JavaScript Dağıtılmış Programlama Kılavuzu](/guides/js-programming/)**:
+ Kavramlar, sözdizimi ve Agoric kitaplığına eklemeler dahil olmak üzere çeşitli katmanlarda Agoric'e özgü bazı eklemeler yaptık. Agoric platformunda programlama yapmadan önce bunları bilmeli ve anlamalısınız.
+8. **[ERTP Kılavuzu](/ertp/guide/README.md)**:
+ ERTP kavramlarının, tasarımının, bileşenlerinin ve komutlarının ayrıntılı bir açıklaması. Komut kullanım örnekleri içerir. Ayrıca ERTP belgeleri kenar çubuğu menüsünden erişilebilen ERTP API belgelerine de bakmalısınız.
+9. **[Zoe Rehberi](/zoe/guide/README.md)**:
+  Zoe kavramlarının, tasarımının, bileşenlerinin ve komutlarının ayrıntılı bir açıklaması.
+  Komut kullanım örnekleri içerir. Ayrıca, Zoe belgeleri kenar çubuğu menüsünden erişilebilen Zoe API belgelerine de bakmalısınız.
 
-When needed, refer to the **[ERTP API Reference](/ertp/api/)**, **[Zoe API
-Reference](/zoe/api/)**, **[Wallet Guide and API Reference](/guides/wallet)**,
-and **[Agoric CLI Guide](/guides/agoric-cli/)** for details about 
-their respective commands. The Wallet Guide also covers the Wallet UI and 
-general working with the Agoric Wallet.
+Gerektiğinde **[ERTP API Referansı](/ertp/api/)**, **[Zoe API Referansı](/zoe/api/)**, **[Cüzdan Kılavuzu ve API Referansı]( /guides/wallet)** ve ilgili komutlarla ilgili ayrıntılar için **[Agoric CLI Guide](/guides/agoric-cli/)**. Cüzdan Kılavuzu ayrıca Cüzdan Kullanıcı Arayüzü ve Agoric Cüzdan ile genel çalışmayı da kapsar.
 
-You can access a REPL (Read-Eval-Print Loop). From the REPL and its `home` object,
-developers can use all the on-chain commands that deployment scripts use to deploy
-contracts and Dapps. See the **[REPL Guide](/repl/)** for details.
+Bir REPL'ye (Okuma-Değerlendirme-Baskı Döngüsü) erişebilirsiniz. Geliştiriciler, REPL'den ve onun "home" nesnesinden, dağıtım komut dosyalarının sözleşmeleri ve Dapp'leri dağıtmak için kullandığı tüm zincir üstü komutları kullanabilir. Ayrıntılar için **[REPL Kılavuzu](/repl/)**'ye bakın.
 
-You use Agoric's Dynamic IBC ([Inter-Blockchain Communication Protocol](https://cosmos.network/ibc)), aka dIBC, 
-to connect to services on other blockchains or make services on the Agoric blockchain available to other blockchains. 
-See our **[dIBC Guide](https://github.com/Agoric/agoric-sdk/blob/HEAD/packages/SwingSet/docs/networking.md)** for more information.
+Agoric'in Dinamik IBC'sini ([Blok Zincirler Arası İletişim Protokolü](https://cosmos.network/ibc)) yani dIBC'yi kullanıyorsunuz,
+diğer blok zincirlerindeki hizmetlere bağlanmak veya Agorik blok zincirindeki hizmetleri diğer blok zincirlerine sunmak için.
+Daha fazla bilgi için **[dIBC Kılavuzumuza](https://github.com/Agoric/agoric-sdk/blob/HEAD/packages/SwingSet/docs/networking.md)** bakın.
 
-To familiarize yourself with working Agoric smart contracts, take a look at our 
-**[Sample Contracts](/zoe/guide/contracts/README.md)**. 
+Çalışan Agoric akıllı sözleşmeleri hakkında bilgi edinmek için **[Örnek Sözleşmelere](/zoe/guide/contracts/README.md)** göz atın.
 
-We also have an **[Agoric Glossary](/glossary/)** for terms we've given Agoric-context
-definitions to (i.e. what does *mint* mean in an Agoric context?).
+Ayrıca Agorik-bağlam verdiğimiz terimler için bir **[Agorik Sözlük](/sözlük/)** var
+tanımlar (yani *nane* Agorik bağlamda ne anlama gelir?).
 
-For more about Agoric's ideas, plans, and goals, see our **[Homepage](https://agoric.com/)**. 
+Agoric'in fikirleri, planları ve hedefleri hakkında daha fazla bilgi için **[Ana Sayfamıza](https://agoric.com/) bakın**.
 
-Our **[Papers](https://agoric.com/papers/)** page has links to various documents you may find useful, 
-such as conference talks, white papers, conference papers, etc. that discuss Agoric's technical background and ideas.
 
-Agoric's **[YouTube channel](https://www.youtube.com/channel/UCpY91oQLh_Lp0mitdZ5bYWg)** has tutorials, company calls, 
-and other talks by Agoric engineers and management.
+**[Bildiriler](https://agoric.com/papers/)** sayfamızda Agoric'in teknik geçmişini ve fikirler.
 
-Finally, we have links to the ultimate documentation; the **[GitHub
-repositories](https://github.com/Agoric/)** for the code that defines the Agoric SDK.
+Agoric'in **[YouTube kanalında](https://www.youtube.com/channel/UCpY91oQLh_Lp0mitdZ5bYWg)** Agoric mühendisleri ve yönetimi tarafından eğiticiler, şirket aramaları ve diğer konuşmalar bulunur.
+
+Son olarak, nihai belgelere bağlantılarımız var; **[GitHub
+Agoric SDK'yı tanımlayan kod için depolar](https://github.com/Agoric/)**.
+
