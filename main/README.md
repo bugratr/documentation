@@ -6,25 +6,25 @@
 ####
 home: true # use default home page layout (hero image with text, features section)
 heroImage: https://agoric.com/wp-content/themes/agoric_2021_theme/assets/img/logo.svg
-## Action button
-actionText: Try Beta Dapps → # text that goes in the button
-actionLink: /getting-started/beta.html # go-to link when clicking on button
-features:
-  - title: New Protocol
-    details: Agoric empowers individuals to securely execute transactions, establish new markets, and craft novel patterns of exchange — without centralized control.
+## Eylem düğmesi
+actionText: Beta Dapps'i deneyin → düğmeye giren # metin
+actionLink: /getting-started/beta.html # butona tıklandığında gidilecek bağlantı
+özellikleri:
+   - title: Yeni Protokol
+     ayrıntılar: Agoric, bireyleri merkezi kontrol olmadan güvenli bir şekilde işlemleri yürütme, yeni pazarlar oluşturma ve yeni değişim kalıpları oluşturma konusunda güçlendirir.
 
-  - title: Better security architecture with OCAPs
-    details: Agoric uses an object-capability (ocap) security architecture, in which access to a programming object itself is the authority to use the object.
+   - title: OCAP'lerle daha iyi güvenlik mimarisi
+     ayrıntılar: Agoric, bir programlama nesnesine erişimin, nesneyi kullanma yetkisi olduğu bir nesne kapasiteli (ocap) güvenlik mimarisi kullanır.
 
-  - title: Securely Create and Transfer
-    details: All kinds of digital assets can be easily created, but importantly, they can be transferred in exactly the same ways, with exactly the same security properties.
+   - title: Güvenli Bir Şekilde Oluşturun ve Aktarın
+     detaylar: Her türlü dijital varlık kolayca oluşturulabilir, ancak daha da önemlisi, tamamen aynı güvenlik özellikleriyle tamamen aynı şekillerde aktarılabilirler.
 
 footer: Apache-2.0 Licensed | Copyright © 2022 - Agoric
 ---
 
 <div class="flex flex--column flex--center">
   <p>
-    Learn about <a href="/getting-started/ertp-introduction.html">ERTP</a>, a uniform way of transferring tokens and other digital assets in JavaScript.
+   JavaScript'te jetonları ve diğer dijital varlıkları aktarmanın tek tip bir yolu olan <a href="/getting-started/ertp-introduction.html">ERTP</a> hakkında bilgi edinin..
   </p>
   <Button-Action-Link
     text="Get Started with ERTP"
@@ -33,14 +33,16 @@ footer: Apache-2.0 Licensed | Copyright © 2022 - Agoric
 </div>
 <br>
 <div class="flex flex--column flex--center">
-  <p>Ready for more? Check out <a href="/getting-started/intro-zoe.html">Zoe</a>. Zoe is responsible for enforcing what we call "offer safety", and the smart contract that runs on top of Zoe is responsible for figuring out a proposed reallocation of resources.
+  <p>Daha fazlası için hazır mısınız? <a href="/getting-started/intro-zoe.html">Zoe</a>'ya göz atın. Zoe, "güvenlik teklifi" dediğimiz şeyi uygulamaktan sorumludur ve Zoe'nin üzerinde çalışan akıllı sözleşme, önerilen bir kaynakların yeniden tahsisini bulmaktan sorumludur.
   </p>
   <Button-Action-Link
     text="Build on Zoe"
     link="/zoe/guide/"
   />
 </div>
+
 ## Platform
+
 30 yıllık deneyime dayanan Agoric, akıllı sözleşmeler ve pazar odaklı programlama için güvenli bir dağıtılmış ocap platformu geliştiriyor. Platformumuz, büyük kamu blok zincirlerinden küçük iki taraflı sözleşmelere kadar birçok farklı ölçekte akıllı sözleşmelerin ve piyasa kurumlarının geliştirilmesini destekler.
 
 Ocap platformumuz şunlardan oluşur:
