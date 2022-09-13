@@ -1,44 +1,37 @@
 ---
 sidebar: auto
 ---
-# Glossary
+# Sözlük
 
-This page lists words, expressions, or concepts used by the Agoric technology stack.
+Bu sayfa, Agoric teknoloji yığını tarafından kullanılan sözcükleri, ifadeleri veya kavramları listeler.
 
-## Agoric CLI
+## Agorik CLI
 
-A command line interface for installing dependencies and initializing, deploying, and starting Agoric projects.
-See the [Agoric CLI Guide](/guides/agoric-cli/).
+Bağımlılıkları yüklemek ve Agoric projelerini başlatmak, dağıtmak ve başlatmak için bir komut satırı arabirimidir.
+[Agorik CLI Kılavuzuna](/guides/agoric-cli/) bakın.
 
-## AllegedName
+## İddia EdilenAd
 
-Human-readable name of a type of assets. The alleged name should
-not be trusted as an accurate depiction, since it is provided by
-the maker of the mint and could be deceptive, but is useful for debugging and double-checking.
-
+Bir varlık türünün insan tarafından okunabilir adı. Darphane yapımcısı tarafından sağlandığı ve aldatıcı olabileceğinden, iddia edilen isme doğru bir tasvir olarak güvenilmemelidir, ancak hata ayıklama ve tekrar kontrol için yararlıdır.
 The AllegedName must be a string.
 
-## Allocation
+## Tahsis
 
-Allocations represent the [amounts](#amount) to be paid out to each [seat](#seat) on exit from a contract instance. Possible
-exit causes are exercising an exit condition, the contract's explicit choice, or a crash or freeze. There are several methods
-for getting the amounts currently allocated.
+Tahsisler, bir sözleşme örneğinden çıkışta her bir [koltuğa](#koltuk) ödenecek [tutarları](#tutar) temsil eder. Mümkün
+çıkış nedenleri, bir çıkış koşulunun uygulanması, sözleşmenin açık seçimi veya bir çökme veya donmadır. Halihazırda tahsis edilen miktarları almak için çeşitli yöntemler vardır.
 
-In more detail, Zoe's guarantee is each [seat](#seat) will either get what it asked for in its offer, or the return of what was [escrowed](#escrow).
-The contract can reallocate fairly arbitrarily to achieve that. As contract code is visible to its clients, users can see
-what the contract intends to do.
+Daha ayrıntılı olarak, Zoe'nin garantisi, her bir [koltuk](#koltuk) ya teklifinde istediğini alacak ya da emanet edilenin (#escrow) iadesini alacaktır.
+Sözleşme, bunu başarmak için oldukça keyfi bir şekilde yeniden tahsis edebilir. Sözleşme kodu müşterileri tarafından görülebildiği için, kullanıcılar sözleşmenin ne yapmak istediğini görebilirler.
 
-Zoe enforces those terms by keeping track of a current allocation for each seat. The initial allocation is the deposit.
-The contract can modify a seat's allocation as long as it never violates offer safety or rights conservation. i.e. it can't
-assign assets that weren't already in some allocation and it can't assign them to more than one seat. Also, goods can't
-disappear from the total allocation.
+Zoe, her koltuk için geçerli bir tahsisi takip ederek bu şartları uygular. İlk tahsis depozitodur.
+Sözleşme, teklif güvenliğini veya hakların korunmasını hiçbir zaman ihlal etmediği sürece bir koltuk tahsisini değiştirebilir. yani, halihazırda bazı tahsislerde olmayan varlıkları atayamaz ve bunları birden fazla koltuğa atayamaz. Ayrıca, mallar toplam tahsisattan kaybolamaz.
 
-## AmountMath
+## TutarMatematik
 
-The AmountMath library executes the logic of how [amounts](#amount) are changed when digital assets are merged, separated,
-or otherwise manipulated. For example, a deposit of 3 [Quatloos](#quatloos) into a purse that already has 7 Quatloos
-updates its balance to 10 Quatloos. But a deposit of a non-fungible theater ticket into a purse that already holds
-five tickets is performed by set union rather than by arithmetic.
+AmountMath kitaplığı, dijital varlıklar birleştirildiğinde, ayrıldığında, [miktarların](#amount) nasıl değiştirildiğinin mantığını yürütür.
+veya başka şekilde manipüle edilmiştir. Örneğin, zaten 7 Quatloo'ya sahip bir cüzdana 3 [Quatloos](#quatloos) yatırılması
+bakiyesini 10 Quatloos'a günceller. Ancak, para karşılığı olmayan bir tiyatro biletinin, halihazırda elinde bulunan bir çantaya yatırılması
+beş bilet, aritmetik yerine küme birliği tarafından gerçekleştirilir.
 
 `AmountMath` has a single set of polymorphic methods that deal with different asset kinds:
 - `AssetKind.NAT`: Used with [fungible](#fungible) assets.
