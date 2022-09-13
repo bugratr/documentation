@@ -40,18 +40,17 @@ footer: Apache-2.0 Licensed | Copyright © 2022 - Agoric
     link="/zoe/guide/"
   />
 </div>
+## Platform
+30 yıllık deneyime dayanan Agoric, akıllı sözleşmeler ve pazar odaklı programlama için güvenli bir dağıtılmış ocap platformu geliştiriyor. Platformumuz, büyük kamu blok zincirlerinden küçük iki taraflı sözleşmelere kadar birçok farklı ölçekte akıllı sözleşmelerin ve piyasa kurumlarının geliştirilmesini destekler.
 
-## The Platform
-Building on 30 years of experience, Agoric is developing a secure distributed ocap platform for smart contracts and market-oriented programming. Our platform supports the development of smart contracts and market institutions across many different scales, from large public blockchains to small two-party contracts.
+Ocap platformumuz şunlardan oluşur:
 
-Our ocap platform consists of:
+- Güvenli akıllı sözleşmeler oluşturmak için sağlam bir mimari.
+- Maksimum erişim için JavaScript'te bir temel.
+- Zincirler arası birlikte çalışabilirlik için bir kriptografik yönlendirme yapısı.
+- Piyasa soyutlamalarından oluşan bir kitaplık ve bunları güvenli bir şekilde oluşturmak için bir çerçeve.
+- Güvenli kullanıcı etkileşimi için bir çerçeve.
 
-- A robust architecture for building secure smart contracts.
-- A foundation in JavaScript for maximum reach.
-- A cryptographic routing fabric for inter-chain interoperability.
-- A library of market abstractions and a framework for securely composing them.
-- A framework for secure user interaction.
+## Başlarken
 
-## Getting Started
-
-Our [Documentation Guide](/getting-started/) describes our documentation and suggests an order for getting started with the Agoric platform.
+[Belgeleme Kılavuzumuz](/getting-started/) belgelerimizi açıklar ve Agoric platformuna başlamak için bir sipariş önerir.
