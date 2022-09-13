@@ -1,7 +1,6 @@
-# Agoric Wallet
+# Agorik Cüzdan
 
-This page documents the *Agoric Wallet*, including its use of *petnames* and its place in the Agoric Platform
-architecture. For a tour of the Wallet UI, see [here](./ui.md). For the Wallet API, see [here](./api.md).
+Bu sayfa *evcil hayvan isimleri* kullanımı ve Agorik Platform mimarisindeki yeri de dahil olmak üzere *Agorik Cüzdan*'ı belgeler. Cüzdan Kullanıcı Arayüzü turu için [buraya](./ui.md) bakın. Cüzdan API'si için [buraya](./api.md) bakın.
 
 ## Wallet and Agoric Architecture
 
